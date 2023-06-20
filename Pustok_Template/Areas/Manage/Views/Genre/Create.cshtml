@@ -1,0 +1,21 @@
+﻿@model Genre
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>GenreCreate</h1>
+<container>
+    <row justify-content-center >
+        <col-md-8>
+    <form method="post" asp-action="create">
+  <div class="form-group">
+    <label asp-for="Name">Name</label>
+    <input  asp-for="Name" class="form-control">
+    <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        </col-md-8>
+    </row>
+</container>
+
